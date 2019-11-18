@@ -1,0 +1,180 @@
+////////////
+
+// @font-face {
+//   font-family: "fk-display-regular";
+//   src: url("../assets/fonts/fkdisplay-regular-webfont.eot");
+//   src: url("../assets/fonts/fkdisplay-regular-webfont.eot?#iefix")
+//       format("embedded-opentype"),
+//     url("../assets/fonts/fkdisplay-regular-webfont.woff2") format("woff2"),
+//     url("../assets/fonts/fkdisplay-regular-webfont.woff") format("woff"),
+//     url("../assets/fonts/fkdisplay-regular-webfont.ttf") format("truetype"),
+//     url("../assets/fonts/fkdisplay-regular-webfont.svg#fk_displayregular")
+//       format("svg");
+//   font-display: block;
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+////////////
+
+// mixins
+
+@mixin f1 {
+  @include sm {
+    font-size: 88px;
+    line-height: 84px;
+  }
+
+  @include xs {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  font-family: Helvetica;
+
+  font-size: 100px;
+  line-height: 96px;
+}
+
+.f1 {
+  @include f1;
+}
+
+//
+
+@mixin f2 {
+  @include sm {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @include xs {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  font-family: Helvetica;
+
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.f2 {
+  @include f2;
+}
+
+//
+
+@mixin f3 {
+  @include sm {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @include xs {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  font-family: Helvetica;
+
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.f3 {
+  @include f3;
+}
+
+@mixin f4 {
+  @include sm {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  @include xs {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  font-family: Helvetica;
+
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.f4 {
+  @include f4;
+}
+
+//
+
+@mixin b1 {
+  @include sm {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @include xs {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  font-family: Helvetica;
+
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.b1 {
+  @include b1;
+}
+
+//
+
+@mixin b2 {
+  @include sm {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include xs {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  font-family: Helvetica;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.b2 {
+  @include b2;
+}
+
+//
+
+@mixin b3 {
+  font-family: Helvetica;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.b3 {
+  @include b3;
+}
+
+//
+
+@mixin caption {
+  font-family: Helvetica;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.caption {
+  @include caption;
+}
